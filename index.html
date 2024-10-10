@@ -6,30 +6,31 @@
     <!--favicon links-->
     <link rel="stylesheet" href="https://www.w3schools.com/html/html_favicon.asp">
     <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
 </head>
-<body>
+<body class="index">
     <!--Header including links to other pages-->
-    <header>
-        <div>
-            <h1>Welcome to Anthony Girgenti's portfolio</h1>
-            <nav>
-                <ul>
-                    <li><a href=".index.html">Home</a></li>
-                    <li><a href="./html/my_resume.html">Resume</a></li>
-                    <li><a href="./html/my_fun_facts.html">Fun Facts</a></li>
-                </ul>
-            </nav>
-        </div>
+    <!--classe for navbar styling-->
+    <header class="navbar">
+        <i class='bx bxs-book-content'></i>
+        <h1>Welcome to Anthony Girgenti's Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href=".index.html">Home</a></li>
+                <li><a href="./html/my_resume.html">Resume</a></li>
+                <li><a href="./html/my_fun_facts.html">Fun Facts</a></li>
+            </ul>
+        </nav>
     </header>
-    <hr><br>
     <!--Beginning of page, including img and quote-->
     <main>
-        <img src="./assets/img/IMG_20240826_231500_343.jpg" alt="" height="300" width="300">
+        <img src="./assets/img/IMG_20240826_231500_343.jpg" alt="" height="300" width="300" class="selfie">
         <br>
-        <i>SIC PARVIS MAGNA (Greatness from small beginnings)</i>
+        <i class="quote">SIC PARVIS MAGNA (Greatness from small beginnings)</i>
         <hr><br>
-        <p>Hi, my name is Anthony Girgenti. I'm from Warren Michigan, and I went to Hazel Park high school and now attending Oakland Universuty in my final year. I look to go into a profession that invloves coding, and would love to give making websites a try. If you would to know more about my skills then go <a href="./html/my_resume.html">here.</a></p>
-        <p>Also if you would like to know some fun facts about me then <a href="./html/my_fun_facts.html">click here!</a></p>
+        <p class="intro">Hi, my name is Anthony Girgenti. I'm from Warren Michigan, and I went to Hazel Park high school and now attending Oakland Universuty in my final year. I look to go into a profession that invloves coding, and would love to give making websites a try. If you would to know more about my skills then go <a href="./html/my_resume.html">here.</a></p>
+        <p class="fun_link">Also if you would like to know some fun facts about me then <a href="./html/my_fun_facts.html">click here!</a></p>
         <br>
         <h2>Progress to Graduation</h2>
         <p>Credits: 107/128</p>
@@ -38,7 +39,7 @@
     </main>
     <br><hr>
     <!--Only contact info I wanted to give out-->
-    <footer>
+    <footer class="contact">
         Contact Info
         <p>anthonygirgenti3@gmail.com</p>
     </footer>

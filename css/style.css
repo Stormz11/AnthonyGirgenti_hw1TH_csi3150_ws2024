@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font for the pages as well as the colors that will be used.*/
+    font-family: 'lora', 'Times New Roman', Times, serif;
+    --bg-primary: var(#2b4162);
+    --bg-secondary: var(#7E8D85);
+    --font-color-primary: var(#B3BFB8);
+    --font-color-secondary: var(#F0F7F4);
+    --backup-color: var(#F4743B);
+}
+
+.index{
+    height: 100vh;
+    background-color:#2b4162;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    border: 3px #7E8D85;
+    border-radius: 10px;
+    border-style: outset;
+
+}
+
+.navbar h1{
+    color: #B3BFB8;
+    font-weight: 800;
+    margin: 20px;
+
+}
+
+
+
+.navbar nav ul{
+    display: flex;
+}
+
+.navbar li{
+    list-style: none;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #F0F7F4;
+    font-size: 16px;
+    margin-right: 50px;
+    transition: color 0.3 ease;
+}
+
+.navbar ul li:hover a{
+    color: #F4743B;
+}
+
+
+
+/* I had missed a class so I looked up a way to move the icon to my liking. */
+.navbar i{
+    position: relative;
+    position: absolute;
+    left: 1.6%;
+    top: 2.5%;
+    font-size: 40px;
+}
