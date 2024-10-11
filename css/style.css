@@ -6,65 +6,160 @@
     box-sizing: border-box;
     /* font for the pages as well as the colors that will be used.*/
     font-family: 'lora', 'Times New Roman', Times, serif;
-    --bg-primary: var(#2b4162);
-    --bg-secondary: var(#7E8D85);
-    --font-color-primary: var(#B3BFB8);
-    --font-color-secondary: var(#F0F7F4);
-    --backup-color: var(#F4743B);
+    --bg-primary: rgb(43, 65, 98);
+    --bg-secondary: rgb(126, 141, 133);
+    --font-color-primary: rgb(179, 191, 184);
+    --font-color-secondary: rgb(240, 247, 244);
+    --backup-color: rgb(244, 116, 59);
 }
 
-.index{
+body{
     height: 100vh;
-    background-color:#2b4162;
+    background-color: var(--bg-primary);
 }
 
 .navbar{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    height: 80px;
     padding: 0 50px;
-    border: 3px #7E8D85;
-    border-radius: 10px;
-    border-style: outset;
-
+    border: 3px solid var(--bg-secondary);
+    border-radius: 8px;
 }
 
 .navbar h1{
-    color: #B3BFB8;
-    font-weight: 800;
-    margin: 20px;
-
+    color: var(--font-color-primary);
+    font-weight: 600;
+    margin-left: 120px;
 }
-
-
 
 .navbar nav ul{
     display: flex;
 }
 
-.navbar li{
+.navbar ul li{
     list-style: none;
 }
 
-.navbar ul li a {
+.navbar ul li a{
     text-decoration: none;
-    color: #F0F7F4;
-    font-size: 16px;
-    margin-right: 50px;
-    transition: color 0.3 ease;
+    color: var(--font-color-secondary);
+    font-size: 15px;
+    margin-right: 15px;
+    cursor: pointer;
 }
 
-.navbar ul li:hover a{
-    color: #F4743B;
+.navbar ul li a:hover{
+    color: var(--backup-color);
 }
 
-
-
-/* I had missed a class so I looked up a way to move the icon to my liking. */
 .navbar i{
-    position: relative;
+    font-size: 30px;
+    color: var(--backup-color);
+}
+
+main{
+    height: 640px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main img{
+    width: 200px;
+    height: 200px;
+    margin-top: 10px;
+    border-radius: 50%;
+}
+
+main i{
+    text-decoration: underline;
+    color: var(--font-color-primary);
+    margin-bottom: 10px;
+}
+main .intro{
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--bg-secondary);
+    color: var(--font-color-secondary);
+    padding: 20px 20px;
+    border-radius: 15px;
+    width: 55%;
+    top: 50%;
+    left: 41%;
+}
+
+main .intro a{
+    text-decoration: underline;
+    color: var(--font-color-secondary);
+}
+
+main .intro a:hover{
+    color: var(--backup-color);
+}
+
+main .fun{
+    margin-top: 5px;
+    color: var(--font-color-primary);
+}
+
+main .fun .link{
+    text-decoration: underline;
+    color: var(--font-color-primary);
+}
+
+main .fun .link:hover{
+    color: var(--backup-color);
+}
+
+main h2{
+    color: var(--font-color-primary);
+    margin-top: 30px;
+}
+
+main .credits{
+    color: var(--bg-secondary);
+    font-size: 20px;
+}
+
+/* Looked up how to style the progress bar on stackflow*/
+main progress {
+  border: outset var(--bg-secondary);
+  width: 200px;
+  height: 10px;
+  background: var(--bg-secondary);
+}
+
+main progress {
+  color: var(--bg-secondary);
+}
+
+main progress::-moz-progress-bar {
+  background:  var(--bg-secondary);
+}
+
+main progress::-webkit-progress-value {
+  background: var(--backup-color);
+}
+
+main progress::-webkit-progress-bar {
+  background: var(--font-color-secondary);
+}
+
+/* Similar to class I made the footer look nice*/
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     position: absolute;
-    left: 1.6%;
-    top: 2.5%;
-    font-size: 40px;
+    background-color: var(--bg-secondary);
+    color: var(--backup-color);
+    padding: 10px 5px;
+    border-radius: 15px;
+    width: 18%;
+    top: 80%;
+    left: 41%;
+    flex-direction: column;
 }
