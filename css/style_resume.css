@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font for the pages as well as the colors that will be used.*/
+    font-family: 'Lora', 'Times New Roman', Times, serif;
+    --bg-primary: rgb(43, 65, 98);
+    --bg-secondary: rgb(126, 141, 133);
+    --font-color-primary: rgb(179, 191, 184);
+    --font-color-secondary: rgb(240, 247, 244);
+    --backup-color: rgb(244, 116, 59);
+}
+
+body{
+    background-color: var(--bg-primary);
+}
+
+.top{
+    border: 5px solid var(--bg-secondary);
+    width: 100%;
+    align-items: center;
+    justify-items: center;
+    border-radius: 20px;
+}
+
+.top div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    color: var(--font-color-primary);
+
+}
+
+.top nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    padding: 0 50px;
+}
+
+.top nav ul{
+    display: flex;
+}
+
+.top nav ul li{
+    list-style: none;
+}
+
+
+.top nav ul li a{
+    text-decoration: none;
+    color: var(--bg-secondary);
+    font-size: 15px;
+    margin-right: 25px;
+    transition: color 0.3s ease;
+}
+
+.top nav ul li a:hover{
+    color: var(--backup-color);
+}
+
+main{
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main header{
+    color: var(--font-color-secondary);
+    font-size: 30px;
+    position: absolute;
+    left: 4%;
+    top: 23%;
+}
+
+main .objective{
+    color: var(--font-color-primary);
+    font-size: 20px;
+    position: absolute;
+    left: 4%;
+    top: 29%;
+}
+
+main .pro{
+    color: var(--font-color-secondary);
+    font-size: 30px;
+    position: absolute;
+    left: 4%;
+    top: 37%
+}
+
+main h5{
+    color: var(--backup-color);
+    font-size: 15px;
+    position: absolute;
+    left: 4%;
+    top: 43%;
+    width: 35%;
+    
+}
+
+main .pool{
+    color: var(--font-color-primary);
+    font-size: 18px;
+    position: absolute;
+    left: 4%;
+    top: 47%;
+    width: 35%;
+}
+
+main .ed{
+    color: var(--font-color-secondary);
+    font-size: 30px;
+    position: absolute;
+    right: 18%;
+    top: 37%;
+}
+
+main table{
+    color: var(--backup-color);
+    font-size: 22px;
+    position: absolute;
+    right: 12%;
+    top: 47%;
+}
+
+main .extra{
+    color: var(--font-color-secondary);
+    font-size: 30px;
+    position: absolute;
+    left: 4%;
+    bottom: 38%;
+}
+
+main .facts{
+    color: var(--font-color-primary);
+    font-size: 18px;
+    position: absolute;
+    left: 4%;
+    bottom: 34%;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    background-color: var(--bg-secondary);
+    color: var(--bg-primary);
+    padding: 10px 5px;
+    border-radius: 15px;
+    width: 18%;
+    top: 80%;
+    left: 41%;
+    flex-direction: column;
+}
