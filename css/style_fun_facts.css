@@ -18,14 +18,167 @@ body{
     height: 100vh;
 }
 
-header{
-    display: flex;
+.top{
+    border: 5px solid var(--bg-secondary);
+    width: 100%;
     align-items: center;
-    justify-content: space-evenly;
-    height: 80px;
-    padding: 0 50px;
-    border: 3px solid var(--bg-secondary);
-    border-radius: 10px;
+    justify-items: center;
+    border-radius: 20px;
 }
 
-header 
+.top h1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    color: var(--font-color-primary);
+
+}
+
+.top nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 65px;
+    padding: 0 50px;
+}
+
+.top nav ul{
+    display: flex;
+}
+
+.top nav ul li{
+    list-style: none;
+}
+
+
+.top nav ul li a{
+    text-decoration: none;
+    color: var(--bg-secondary);
+    font-size: 15px;
+    margin-right: 25px;
+    transition: color 0.3s ease;
+}
+
+.top nav ul li a:hover{
+    color: var(--backup-color);
+}
+
+main{
+    height: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main .book{
+    color: var(--font-color-primary);
+    font-size: 30px;
+}
+
+main .omni{
+    color: var(--font-color-secondary);
+    margin-bottom: 5px;
+}
+
+main img{
+    width: 300px;
+    height: 350px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+main .buy a{
+    text-decoration: none;
+    color: var(--bg-secondary);
+    font-size: 19px;
+    margin-right: 25px;
+    transition: color 0.3s ease;
+}
+
+main .buy a:hover{
+    color: var(--backup-color);
+}
+
+main .light{
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--bg-secondary);
+    color: var(--font-color-secondary);
+    padding: 20px 20px;
+    border-radius: 15px;
+    width: 65%;
+    top: 50%;
+    left: 41%;
+    font-size: 20px;
+    margin-top: 5px;
+}
+main div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main div .artist{
+    color: var(--font-color-primary);
+    margin-top: 25px;
+}
+
+main div .juice{
+    color: var(--font-color-secondary);
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+main div .title{
+    color: var(--bg-secondary);
+    margin-top: 5px;
+}
+
+main div audio{
+    margin-top: 10px;
+}
+
+main div .jl a{
+    text-decoration: none;
+    color: var(--bg-secondary);
+    font-size: 15px;
+    transition: color 0.3s ease;
+    margin-top: 10px;
+}
+
+main div .jl a:hover{
+    color: var(--backup-color);
+}
+
+main .show{
+    color: var(--font-color-primary);
+    font-size: 25px;
+}
+
+main .dex{
+    color: var(--font-color-secondary);
+    font-size: 20px;
+}
+
+main iframe{
+    width: 600;
+    height: 400;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    background-color: var(--bg-secondary);
+    color: var(--bg-primary);
+    padding: 10px 5px;
+    border-radius: 15px;
+    width: 18%;
+    top: 155%;
+    left: 41%;
+    flex-direction: column;
+}
